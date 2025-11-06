@@ -2,7 +2,24 @@
   "routes": [
     {
       "src": "/",
-      "dest": "/ГлавнаяОр/ГлавнаяОр.html"
+      "dest": "/ГлавнаяОр/ГлавнаяОр.html",
+      "status": 200
+    },
+    {
+      "src": "/home",
+      "dest": "/ГлавнаяОр/ГлавнаяОр.html",
+      "status": 200
+    },
+    {
+      "src": "/index",
+      "dest": "/ГлавнаяОр/ГлавнаяОр.html", 
+      "status": 200
+    }
+  ],
+  "rewrites": [
+    {
+      "source": "/(.*)",
+      "destination": "/ГлавнаяОр/ГлавнаяОр.html"
     }
   ]
 }
